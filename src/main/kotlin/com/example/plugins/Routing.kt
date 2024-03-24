@@ -18,9 +18,6 @@ fun Application.configureRouting() {
         }
 
         get("/get") {
-            val client = TelegramBotApiClient("6904242389:AAFnTsUSvSHIxqEO8ur-aogdHZXf2YLl3sw")
-//            val user: TelegramResponse<List<Update>> = client.getUpdates()
-
             call.respondText { "sdf" }
             val z = 50
         }
