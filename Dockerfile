@@ -13,4 +13,4 @@ RUN ./gradlew build
 EXPOSE 8080
 
 # Command to run your Ktor application when the container starts
-CMD ["java", "-jar", "-Xmx5G", "-Xss2G", "build/libs/telegram_library-all.jar"]
+CMD ["java", "-jar", "-Xmx5G", "-Xss1G", "build/libs/telegram_library-all.jar"]
