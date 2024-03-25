@@ -1,5 +1,7 @@
 # Use a base image with the JVM installed
-FROM adoptopenjdk/openjdk11:alpine-slim
+FROM adoptopenjdk/openjdk11:jre-11.0.12_7-alpine
+
+RUN apk update && apk add apache2-utils && rm -rf /var/cache/apk/*
 
 # Set the working directory inside the container
 WORKDIR /app
